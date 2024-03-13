@@ -22,3 +22,12 @@ model User {
 
   @@map("User")
 }
+
+model Task {
+  id     Int      @id @default(autoincrement())
+  task   String
+  data   DateTime
+  status String
+
+  @@map("task")
+}
